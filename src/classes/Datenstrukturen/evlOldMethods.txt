@@ -1,0 +1,42 @@
+/**
+ * Prüft, ob das gegebene Element in der Liste enthalten ist.
+ *
+ * @param e Das Element, das gesucht wird.
+ * @return true, wenn das Element in der Liste enthalten ist, false wenn nicht.
+ * @throws NoSuchElementException Wenn die Liste leer ist.
+ */
+ public boolean contains(T e) {
+     // Falls die Liste leer ist, wirf eine NoSuchElementException
+     if (first == null)
+         throw new NoSuchElementException("Die Liste ist noch leer!");
+
+     // Setze tmp auf das erste Element in der Liste
+     ListenElement tmp = first;
+
+     // Durchlaufe die Liste und prüfe, ob tmp.data gleich dem gesuchten Element ist
+     while (tmp != null) {
+         // Verwende die Methode equals von der Klasse Objects, um zu prüfen, ob tmp.data und e gleich sind
+         if (tmp.data.equals(e))
+             return true;
+         // Setze tmp auf das nächste Element in der Liste
+         tmp = tmp.next;
+     }
+__________________________
+    /**
+     * Gibt den Wert des letzten Elements der Liste zurück.
+     *
+     * @return Der Wert des letzten Elements.
+     * @throws NoSuchElementException wenn die Liste leer ist.
+     */
+    public T getLast() {
+        //falls die Liste leer ist:
+        if (first == null)
+            throw new NoSuchElementException("Die Liste ist noch leer!");
+
+        //sonst suche das letzte Element
+        ListenElement tmp = first;
+        while (tmp.next != null)
+            tmp = tmp.next;
+        return tmp.data;
+    }
+_____________________________________
