@@ -3,7 +3,6 @@ import java.nio.BufferUnderflowException;
  * Lifo ist eine Klasse, die von der Klasse AbstractIntegerBuffer erbt und eine Last-In-First-Out (LIFO) Datenstruktur implementiert.
  * Es ermöglicht, dass Elemente in LIFO-Manier zu dem Array hinzugefügt und entfernt werden, wobei das letzte Element, das zu dem Array hinzugefügt wurde,
  * das erste Element ist, das entfernt wird.
- * @author Ahmed
  * @see AbstractIntegerBuffer
  */
 public class Lifo extends AbstractIntegerBuffer {
