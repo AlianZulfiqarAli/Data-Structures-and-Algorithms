@@ -3,7 +3,6 @@ import java.nio.BufferUnderflowException;
  * Fifo ist eine Klasse, die von der Klasse AbstractIntegerBuffer erbt und eine First-In-First-Out (LIFO) Datenstruktur implementiert.
  * Es ermöglicht, dass Elemente in FIFO-Manier zu dem Array hinzugefügt und entfernt werden, wobei das erste Element, das zu dem Array hinzugefügt wurde,
  * das erste Element ist, das entfernt wird.
- * @author Ahmed
  * @see AbstractIntegerBuffer
  */
 public class Fifo extends AbstractIntegerBuffer {
